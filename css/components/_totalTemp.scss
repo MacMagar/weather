@@ -1,0 +1,14 @@
+.total-temp {
+    @include desktop;
+    &__heading {
+        @include f-tertiary;
+        @include tCenter;
+        font-size: 2rem;
+        font-style: italic;
+        text-transform: capitalize;
+    }
+
+    &__chart {
+        width: 100%;
+    }
+}

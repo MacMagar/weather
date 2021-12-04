@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sagar Magar">
+    <meta name="keywords" content="free weather app, weather app, sagar magar">
+    <meta name="description" content="Get instant weather data to plan your day ahead.">
+    <meta name="theme-color" content="#eed810">
+    <title>Weather App | Sagar Magar</title>
+    <link rel="icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>  
+
+   <nav>
+       <div class="navigation pr-sm pl-sm">
+           <img src="imgs/logo.png" alt="" class="navigation__logo">
+            <div class="navigation__search">
+                <input type="text" class="navigation__search-input" placeholder="location...">
+                <img src="icons/search_icon.svg" class="navigation__search-icon" alt="search icon">
+                <div class="navigation__results"></div>
+            </div>
+       </div>
+   </nav>
+   
+   <!--
+       ================ Navigation section ends here ================
+   -->
+
+   <section>
+       <div class="hero pr-sm pl-sm">
+        <div class="current-info pt-sm pb-lg">
+            <div class="current-info__refresh">
+                <img src="icons/refresh.svg" alt="" class="current-info__refresh-icon mb-sm">
+            </div>
+            <img class="current-info__status-icon mr-xsm">
+            <p class="current-info__status-text mbx-sm">Partly Sunny</p>
+            <h1 class="current-info__temp mb-xsm">24&#176;C</h1>
+            <p class="current-info__location">Kathmandu, Nepal</p>
+        </div>
+       </div>
+   </section>
+
+   <!--
+       ====================== Hero Section ends here ===============
+   -->
+
+   <section>
+       <div class="total-temp mr-xsm">
+           <h2 class="total-temp__heading pt-sm pb-sm">
+               Todays Temperature Statistics
+           </h2>
+       </div>
+   </section>
+
+   <!--
+       ============= Total temp section ends here ===========
+   -->
+
+   <footer>
+       <div class="copyright pt-sm pb-sm">
+           <p class="copyright__text">Copyright &copy; 2021. All rights reserved.</p>
+       </div>
+   </footer>
+
+    <script src="scripts/bundle.js" defer></script>
+</body>
+</html>

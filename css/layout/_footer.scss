@@ -1,0 +1,8 @@
+.copyright {
+    @include desktop;
+    &__text {
+        @include f-primary;
+        text-align: right;
+        font-size: .8rem;
+    }
+}

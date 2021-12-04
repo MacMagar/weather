@@ -1,0 +1,43 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        clear: both;
+        display: inline-block;
+    }
+}
+
+//text formatting css
+@mixin td-none {
+    text-decoration: none;
+}
+
+@mixin f-secondary {
+    font-family: "Anton";
+}
+@mixin f-primary {
+    font-family: "Roboto";
+}
+@mixin f-tertiary {
+    font-family: "Lobster Two";
+}
+
+@mixin desktop {
+    @media (min-width: 1150px) {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+}
+
+@mixin tCenter {
+    text-align: center;
+}
+
+@mixin bs-none {
+    box-shadow: none;
+}
+@mixin ot-none {
+    outline: none;
+}
+@mixin pointer {
+    cursor: pointer;
+}

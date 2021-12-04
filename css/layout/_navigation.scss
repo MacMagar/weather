@@ -1,0 +1,71 @@
+nav {
+    background-color: $color-yellow;
+}
+
+.navigation {
+    @include desktop;
+    display: flex;
+    
+    
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__search {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: auto;
+        
+        &-link {
+            padding: .6rem 0 .6rem .6rem;
+            transition: .14s background-color linear;
+            &:hover {
+                background: rgb(245, 245, 245);
+            }
+        }
+        
+        &-input {
+            @include f-primary;
+            font-size: 1.3rem;
+            font-weight: 600;
+            width: 12rem;
+            padding: .5rem 2.2rem .5rem .6rem;
+            border: none;
+            background-color: transparent;
+            border-bottom: thin solid $color-black;
+            
+        &:focus {
+            @include bs-none;
+            @include ot-none;
+        }
+
+        }
+
+        &-icon {
+            position: absolute;
+            right: .15rem;
+            height: 2rem;
+        }
+
+    }
+
+    &__results {
+        @include f-primary;
+        @include pointer;
+        border-radius: .45rem;
+        position: absolute;
+        top: 2.8rem;
+        border: .1rem solid rgb(126, 123, 123);
+        right: 0;
+        background-color: #ffffff;
+
+        padding: .6rem 1rem;
+        max-height: 15rem;
+        width: 14rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: none;
+    }
+
+}

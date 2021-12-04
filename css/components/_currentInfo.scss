@@ -1,0 +1,44 @@
+.current-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__refresh {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+
+        &-icon {
+        height: 2.5rem;
+        }
+    }
+
+    &__status-icon {
+        height: 2.5rem;
+    }
+
+    &__status-text {
+        @include f-tertiary;
+        font-style: italic;
+        font-size: 1.6rem;
+    }
+
+    &__temp {
+        @include f-secondary;
+        @include tCenter;
+        flex: 1 1 100%;
+        font-size: 7rem;
+    }
+    &__location {
+        font-size: 1.6rem;
+        @include f-primary;
+    }
+}
+
+.todays-chart {
+    img {
+        max-width: 100%;
+    }
+}
+

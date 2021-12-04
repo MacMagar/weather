@@ -1,0 +1,14 @@
+.rotater {
+    animation-name: rotats;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes rotats {
+    0% {
+        transform: rotateZ(0deg);
+    } 
+    100% {
+        transform: rotateZ(360deg);
+    }  
+  }
